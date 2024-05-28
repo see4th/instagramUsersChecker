@@ -5,7 +5,8 @@ def UserExistenceChecker(username):
         url = f"https://www.instagram.com/{username}/"
         response = requests.get(url)
         length= len(response.text)
-        print("the user name :", username )
+        
+        print("the user name :", username , " and the length of his profile is : ", length)
 
         
         if length<=400000:
